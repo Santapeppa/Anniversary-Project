@@ -1,4 +1,6 @@
 <!--<!DOCTYPE html>-->
+
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -29,12 +31,16 @@
             border: 1px solid rgba(0, 0, 0, 0.1);
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         }
-        /* Rimpicciolisci l'immagine */
+        /* Rimpicciolisci l'immagine e spostala a destra */
         .container img {
             max-width: 50%; /* Modifica la larghezza massima dell'immagine */
             height: auto; /* Imposta l'altezza automatica per mantenere le proporzioni */
-            display: block; /* Imposta l'elemento come blocco per centrarlo correttamente */
-            margin: 0 auto; /* Centra l'immagine orizzontalmente */
+            float: right; /* Sposta l'immagine a destra */
+            margin-left: 20px; /* Aggiunge un margine a sinistra per separare il testo dall'immagine */
+        }
+        /* Stili per il link attorno all'immagine */
+        .container a {
+            display: block; /* Imposta il link come blocco per renderlo cliccabile sull'intera larghezza */
         }
         footer {
             display: none; /* Removed the footer */
@@ -46,7 +52,9 @@
         <h2>Sei ormai un affezionato cliente</h2>
         <p>Dopo questi meravigliosi 4 anni, sei pronto a rinnovare il tuo contratto per altri +4?</p>
         <!-- Inserisci qui i tuoi commenti -->
-        <img src="IMG_20200620_151942.jpg" alt="Immagine con commenti">
+        <a href="URL_DEL_LINK">
+            <img src="IMG_20200620_151942.jpg" alt="Immagine con commenti">
+        </a>
     </div>
 </body>
 </html>
