@@ -25,17 +25,17 @@
             font-size: 2.5rem; /* Dimensione del titolo grande */
             color: #fff; /* Colore del testo */
         }
-        /* Stili per il contenitore principale */
-        .container {
-            max-width: 800px;
-            margin: 20px auto; /* Margine esterno per il contenitore */
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7); /* Sfondo scuro traslucido per il contenuto */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Leggera ombra bianca per evidenziare il contenuto */
-        }
+       /* Stili per il contenitore principale */
+.container {
+    max-width: 800px;
+    margin: 20px auto; /* Margine esterno per il contenitore */
+    padding: 20px;
+    background-color: #E0FFFF; /* Azzurrino chiaro chiaro */
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Aggiunge un bordo sottile e poco visibile */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Leggera ombra bianca per evidenziare il contenuto */
+}        
         
-        /* Stili per il piè di pagina */
 footer {
     background-color: rgba(0, 0, 0, 0); /* Rimuove la traslucenza e rende il fondo completamente trasparente */
     color: #fff; /* Colore del testo */
@@ -46,7 +46,7 @@ footer {
     bottom: 0;
 }
 
-        /* Altri stili CSS possono essere aggiunti qui */
+       
     </style>
 </head>
 <body>
