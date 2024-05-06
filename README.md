@@ -1,53 +1,58 @@
-
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="it">
     <title>La tua Pagina Web con Sfondo Indie</title>
+        <style>
+        /* Nasconde il testo con un'ID specifico */
+        #testo-nascosto {
+            display: none;
+        }
+    </style>
+
     <style>
         /* Imposta l'immagine come sfondo */
         body {
             background-image: url('IMG_20200620_151942.jpg');
-            background-size: cover; /* per adattare l'immagine allo schermo */
-            background-position: center; /* posiziona l'immagine al centro dello sfondo */
-            font-family: 'Courier New', monospace; /* Tipo di carattere con stile vintage */
-            color: #fff; /* Colore del testo */
-            line-height: 1.6; /* Altezza della riga per una maggiore leggibilità */
+            background-size: cover;
+            background-position: center;
+            font-family: 'Courier New', monospace;
+            color: #fff;
+            line-height: 1.6;
         }
         /* Stili per l'intestazione */
         header {
-            background-color: rgba(0, 0, 0, 0.5); /* Sfondo scuro traslucido per l'intestazione */
+            background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5rem; /* Dimensione del titolo grande */
-            color: #fff; /* Colore del testo */
+            font-size: 2.5rem;
+            color: #fff;
         }
-       /* Stili per il contenitore principale */
-.container {
-    max-width: 800px;
-    margin: 20px auto; /* Margine esterno per il contenitore */
-    padding: 20px;
-    background-color: #E0FFFF; /* Azzurrino chiaro chiaro */
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Aggiunge un bordo sottile e poco visibile */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Leggera ombra bianca per evidenziare il contenuto */
-}        
-        
-footer {
-    background-color: rgba(0, 0, 0, 0); /* Rimuove la traslucenza e rende il fondo completamente trasparente */
-    color: #fff; /* Colore del testo */
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-       
-  
+        /* Stili per il contenitore principale */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #E0FFFF;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -57,9 +62,5 @@ footer {
         <h2>Sei ormai un affezionato cliente</h2>
         <p>Dopo questi meravigliosi 4 anni, sei pronto a rinnovare il tuo contratto per altri +4?</p>
     </div>
-    <footer>
-        <p>&copy; 2024 - Spatabubi</p>
-    </footer>
 </body>
 </html>
-
