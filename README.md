@@ -1,5 +1,4 @@
 <!--<!DOCTYPE html>-->
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -53,8 +52,9 @@
         <p>Dopo questi meravigliosi 4 anni, sei pronto a rinnovare il tuo contratto per altri +4?</p>
         <!-- Inserisci qui i tuoi commenti -->
         <a href="URL_DEL_LINK">
-            <img src="IMG_20200620_151942.jpg" alt="Immagine con commenti">
+            <img src="videoframe_728.png" alt="Immagine con commenti">
         </a>
     </div>
 </body>
 </html>
+
