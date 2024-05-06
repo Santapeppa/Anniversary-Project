@@ -34,7 +34,7 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Leggera ombra bianca per evidenziare il contenuto */
         }
-        /* Stili per il piè di pagina */
+        
         /* Stili per il piè di pagina */
 footer {
     background-color: rgba(0, 0, 0, 0); /* Rimuove la traslucenza e rende il fondo completamente trasparente */
@@ -46,7 +46,6 @@ footer {
     bottom: 0;
 }
 
-        }
         /* Altri stili CSS possono essere aggiunti qui */
     </style>
 </head>
