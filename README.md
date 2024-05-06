@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="it">
     <title>La tua Pagina Web con Sfondo Indie</title>
-        <style>
-        /* Nasconde il testo con un'ID specifico */
-        #testo-nascosto {
-            display: none;
-        }
-    </style>
-
     <style>
         /* Imposta l'immagine come sfondo */
         body {
@@ -43,6 +36,11 @@
             border: 1px solid rgba(0, 0, 0, 0.1);
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         }
+        /* Rimpicciolisci l'immagine */
+        .container img {
+            max-width: 100%;
+            height: auto;
+        }
         footer {
             background-color: rgba(0, 0, 0, 0);
             color: #fff;
@@ -61,6 +59,8 @@
     <div class="container">
         <h2>Sei ormai un affezionato cliente</h2>
         <p>Dopo questi meravigliosi 4 anni, sei pronto a rinnovare il tuo contratto per altri +4?</p>
+        <!-- Inserisci qui i tuoi commenti -->
+        <img src="IMG_20200620_151942.jpg" alt="Immagine con commenti">
     </div>
 </body>
 </html>
