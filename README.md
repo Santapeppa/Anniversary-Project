@@ -1,5 +1,4 @@
-
-<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +8,7 @@
     <style>
         /* Imposta l'immagine come sfondo */
         body {
-            background-image: url('IMG_20200620_151942.jpg');
+            background-image: url('IMM036.JPG'); /* Changed background image */
             background-size: cover;
             background-position: center;
             font-family: 'Courier New', monospace;
