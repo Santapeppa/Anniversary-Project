@@ -31,8 +31,10 @@
         }
         /* Rimpicciolisci l'immagine */
         .container img {
-            max-width: 100%;
-            height: auto;
+            max-width: 50%; /* Modifica la larghezza massima dell'immagine */
+            height: auto; /* Imposta l'altezza automatica per mantenere le proporzioni */
+            display: block; /* Imposta l'elemento come blocco per centrarlo correttamente */
+            margin: 0 auto; /* Centra l'immagine orizzontalmente */
         }
         footer {
             display: none; /* Removed the footer */
