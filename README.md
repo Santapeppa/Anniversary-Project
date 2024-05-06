@@ -47,7 +47,7 @@ footer {
 }
 
        
-    </style>
+  
 </head>
 <body>
     <header>
