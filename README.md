@@ -29,9 +29,9 @@
             border: 1px solid rgba(0, 0, 0, 0.1);
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         }
-        /* Stili per il video */
-        .container video {
-            width: 100%; /* Imposta la larghezza del video al 100% del contenitore */
+        /* Stili per l'immagine GIF */
+        .container img {
+            width: 100%; /* Imposta la larghezza dell'immagine GIF al 100% del contenitore */
             height: auto; /* Imposta l'altezza automatica per mantenere le proporzioni */
         }
         footer {
@@ -44,10 +44,9 @@
         <h2>Sei ormai un affezionato cliente</h2>
         <p>Dopo questi meravigliosi 4 anni, sei pronto a rinnovare il tuo contratto per altri +4?</p>
         <!-- Inserisci qui i tuoi commenti -->
-        <video controls autoplay loop>
-            <source src="VIDEO_FILE.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <img src="VIDEO_FRAME.gif" alt="Immagine GIF animata">
     </div>
 </body>
 </html>
+
+  
