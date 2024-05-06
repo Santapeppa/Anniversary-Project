@@ -47,9 +47,9 @@
 </head>
 <body>
     <header>
-        <h1>Benvenuto nella tua Pagina Web</h1>
+        <h1>Benvenuto Gentile Elio</h1>
     </header>
     <div class="container">
-        <h2>Contenuto della Pagina</h2>
-        <p>Questa è una pagina web con uno sfondo personalizzato.</p>
-        <p>Puoi modificare questo codice per adattarlo alle tue esigenze.
+        <h2>Sei ormai un affezzionato cliente</h2>
+        <p>Dopo questi meravigliosi 4 anni, è pronto a rinnovare il suo contratto per altri + 4?</p>
+        
