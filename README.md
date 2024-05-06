@@ -35,14 +35,17 @@
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Leggera ombra bianca per evidenziare il contenuto */
         }
         /* Stili per il piè di pagina */
-        footer {
-            background-color: rgba(0, 0, 0, 0.5); /* Sfondo scuro traslucido per il piè di pagina */
-            color: #fff; /* Colore del testo */
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        /* Stili per il piè di pagina */
+footer {
+    background-color: rgba(0, 0, 0, 0); /* Rimuove la traslucenza e rende il fondo completamente trasparente */
+    color: #fff; /* Colore del testo */
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
         }
         /* Altri stili CSS possono essere aggiunti qui */
     </style>
