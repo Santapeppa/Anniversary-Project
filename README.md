@@ -56,7 +56,7 @@
     </div>
     <footer>
         <div class="container">
-            <p>&copy; 2024 - Il tuo Nome</p>
+            <p>&copy; 2024 - Spatabubi</p>
         </div>
     </footer>
 </body>
