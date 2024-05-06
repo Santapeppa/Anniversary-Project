@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -12,26 +13,19 @@
             background-size: cover;
             background-position: center;
             font-family: 'Courier New', monospace;
-            color: #fff;
+            color: #000; /* Changed text color to black */
             line-height: 1.6;
         }
         /* Stili per l'intestazione */
         header {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            color: #fff;
+            display: none; /* Removed the header with blue background */
         }
         /* Stili per il contenitore principale */
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #E0FFFF;
+            background-color: transparent; /* Removed the blue background */
             border-radius: 10px;
             border: 1px solid rgba(0, 0, 0, 0.1);
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
@@ -42,20 +36,11 @@
             height: auto;
         }
         footer {
-            background-color: rgba(0, 0, 0, 0);
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            display: none; /* Removed the footer */
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Benvenuto Gentile Elio</h1>
-    </header>
     <div class="container">
         <h2>Sei ormai un affezionato cliente</h2>
         <p>Dopo questi meravigliosi 4 anni, sei pronto a rinnovare il tuo contratto per altri +4?</p>
