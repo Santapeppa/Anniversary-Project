@@ -1,5 +1,4 @@
 <!--<!DOCTYPE html>-->
-<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -30,16 +29,10 @@
             border: 1px solid rgba(0, 0, 0, 0.1);
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         }
-        /* Rimpicciolisci l'immagine e spostala a destra */
-        .container img {
-            max-width: 50%; /* Modifica la larghezza massima dell'immagine */
+        /* Stili per il video */
+        .container video {
+            width: 100%; /* Imposta la larghezza del video al 100% del contenitore */
             height: auto; /* Imposta l'altezza automatica per mantenere le proporzioni */
-            float: right; /* Sposta l'immagine a destra */
-            margin-left: 20px; /* Aggiunge un margine a sinistra per separare il testo dall'immagine */
-        }
-        /* Stili per il link attorno all'immagine */
-        .container a {
-            display: block; /* Imposta il link come blocco per renderlo cliccabile sull'intera larghezza */
         }
         footer {
             display: none; /* Removed the footer */
@@ -51,10 +44,10 @@
         <h2>Sei ormai un affezionato cliente</h2>
         <p>Dopo questi meravigliosi 4 anni, sei pronto a rinnovare il tuo contratto per altri +4?</p>
         <!-- Inserisci qui i tuoi commenti -->
-        <a href="URL_DEL_LINK">
-            <img src="videoframe_728.png" alt="Immagine con commenti">
-        </a>
+        <video controls autoplay loop>
+            <source src="VIDEO_FILE.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 </body>
 </html>
-
