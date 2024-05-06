@@ -1,5 +1,6 @@
 # Anniversary-Project
 
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -50,6 +51,13 @@
         <h1>Benvenuto Gentile Elio</h1>
     </header>
     <div class="container">
-        <h2>Sei ormai un affezzionato cliente</h2>
-        <p>Dopo questi meravigliosi 4 anni, è pronto a rinnovare il suo contratto per altri + 4?</p>
-        
+        <h2>Sei ormai un affezionato cliente</h2>
+        <p>Dopo questi meravigliosi 4 anni, sei pronto a rinnovare il tuo contratto per altri +4?</p>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 - Il tuo Nome</p>
+        </div>
+    </footer>
+</body>
+</html>
