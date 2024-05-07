@@ -64,7 +64,6 @@
     <div class="container">
         <h2>Sei ormai un affezionato cliente</h2>
         <p style="font-size: 1.5rem;">Dopo questi 4 meravigliosi anni, sei pronto a rinnovare il tuo contratto per altri +4?</p>
-        
         <!-- Aggiungi il link alla nuova pagina qui -->
         <a href="pagina_rinnovo.html" class="renewal-link">CLICCA QUI PER ULTERIORI INFORMAZIONI</a>
     </div>
