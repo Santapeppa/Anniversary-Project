@@ -68,6 +68,9 @@
         <a href="link_per_rinnovare_il_tuo_abbonamento.html" class="renewal-link">CLICCA QUI PER RINNOVARE IL TUO ABBONAMENTO</a>
         
         <!-- Aggiungi il link alla nuova pagina qui -->
+        <!-- Aggiornato il link per rinnovare l'abbonamento -->
+<a href="link_per_rinnovare_il_tuo_abbonamento.html" class="renewal-link">CLICCA QUI PER RINNOVARE IL TUO ABBONAMENTO</a>
+
         <a href="pagina_rinnovo.html" class="renewal-link">CLICCA QUI PER ULTERIORI INFORMAZIONI</a>
     </div>
 </body>
