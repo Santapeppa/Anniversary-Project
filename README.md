@@ -48,12 +48,24 @@
         footer {
             display: none; /* Removed the footer */
         }
+        /* Stili per il link */
+        .renewal-link {
+            display: block; /* Rendi il link un blocco per occupare l'intera larghezza del contenitore */
+            text-align: center; /* Centra il link */
+            margin-top: 20px; /* Aggiungi spazio sopra il link */
+            text-decoration: none; /* Rimuovi la sottolineatura predefinita */
+            color: #fff; /* Colore del testo del link */
+            font-weight: bold; /* Rendi il testo del link in grassetto */
+            font-size: 1.2rem; /* Dimensione del testo del link */
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h2>Sei ormai un affezionato cliente</h2>
         <p style="font-size: 1.5rem;">Dopo questi 4 meravigliosi anni, sei pronto a rinnovare il tuo contratto per altri +4?</p>
+        <!-- Aggiungiamo il link cliccabile -->
+        <a href="link_per_rinnovare_il_tuo_abbonamento.html" class="renewal-link">CLICCA QUI PER RINNOVARE IL TUO ABBONAMENTO</a>
     </div>
 </body>
 </html>
