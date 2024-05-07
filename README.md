@@ -66,8 +66,13 @@
         <p style="font-size: 1.5rem;">Dopo questi 4 meravigliosi anni, sei pronto a rinnovare il tuo contratto per altri +4?</p>
         <!-- Aggiungiamo il link cliccabile -->
         <a href="link_per_rinnovare_il_tuo_abbonamento.html" class="renewal-link">CLICCA QUI PER RINNOVARE IL TUO ABBONAMENTO</a>
+        
+        <!-- Aggiungi il link alla nuova pagina qui -->
+        <a href="pagina_rinnovo.html" class="renewal-link">CLICCA QUI PER ULTERIORI INFORMAZIONI</a>
     </div>
 </body>
 </html>
+
+
 
 
