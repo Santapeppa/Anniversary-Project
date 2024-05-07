@@ -12,7 +12,8 @@
             background-size: cover;
             background-position: center;
             font-family: 'Courier New', monospace;
-            color: #000; /* Changed text color to black */
+            color: #fff; /* Changed text color to white for better contrast */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Added text shadow for better visibility */
             line-height: 1.6;
         }
         /* Stili per l'intestazione */
