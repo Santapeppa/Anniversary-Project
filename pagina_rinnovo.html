@@ -31,7 +31,7 @@
         }
         /* Stili per il paragrafo */
         .container p {
-            font-size: 1.2rem; /* Dimensione del testo */
+            font-size: 1rem; /* Dimensione del testo */
             text-align: justify; /* Giustifica il testo */
         }
         /* Stili per il modulo di rinnovo */
@@ -46,6 +46,7 @@
             bottom: 0; /* Fondo della pagina */
             left: 0; /* Allineato a sinistra */
             margin: 0; /* Rimuove il margine predefinito */
+            font-size: 0.9rem; /* Riduci la dimensione del carattere */
         }
         /* Stili per i campi del modulo */
         form input[type="text"],
@@ -88,18 +89,18 @@
             <h1>Dettagli del Rinnovo</h1>
         </header>
         <p>Grazie per il tuo interesse nel rinnovare il tuo abbonamento! Per favore, compila il modulo di rinnovo sottostante con le tue informazioni e procedi con il pagamento per confermare il rinnovo del tuo abbonamento.</p>
-        <!-- Aggiungi qui il modulo di rinnovo -->
-        <form action="processa_rinnovo.php" method="POST">
-            <!-- Campi del modulo -->
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" required><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <!-- Bottone di invio -->
-            <input type="submit" value="Conferma Rinnovo">
-        </form>
-        <!-- Link per tornare alla pagina precedente -->
-        <a href="#" class="return-link" onclick="history.go(-1);">Torna indietro</a>
     </div>
+    <!-- Aggiungi qui il modulo di rinnovo -->
+    <form action="processa_rinnovo.php" method="POST">
+        <!-- Campi del modulo -->
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <!-- Bottone di invio -->
+        <input type="submit" value="Conferma Rinnovo">
+    </form>
+    <!-- Link per tornare alla pagina precedente -->
+    <a href="#" class="return-link" onclick="history.go(-1);">Torna indietro</a>
 </body>
 </html>
