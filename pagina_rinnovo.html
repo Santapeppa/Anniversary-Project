@@ -16,6 +16,7 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed; /* Fissa l'immagine di sfondo per evitare lo scorrimento */
+            font-size: 14px; /* Riduci la dimensione del carattere */
         }
         /* Stili per il contenitore principale */
         .container {
@@ -26,10 +27,7 @@
             border-radius: 10px;
             border: 1px solid #ccc; /* Aggiunta di un bordo sottile */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: fixed; /* Imposta la posizione fissa */
-            bottom: 0; /* Posiziona il contenitore in basso */
-            left: 50%; /* Posiziona al centro */
-            transform: translateX(-50%); /* Centra orizzontalmente */
+            position: relative; /* Imposta la posizione relativa */
         }
         /* Stili per il paragrafo */
         .container p {
@@ -38,27 +36,35 @@
         }
         /* Stili per il modulo di rinnovo */
         form {
-            position: fixed; /* Imposta la posizione fissa */
-            bottom: 20px; /* Posiziona il modulo 20px sopra il fondo */
-            left: 50%; /* Posiziona al centro orizzontalmente */
-            transform: translateX(-50%); /* Centra orizzontalmente */
-            max-width: 80%; /* Riduci la larghezza del modulo */
-            padding: 10px; /* Riduci lo spazio intorno al modulo */
+            max-width: 100%; /* Larghezza massima del modulo */
+            padding: 10px; /* Spaziatura interna */
             background-color: rgba(255, 255, 255, 0.8); /* Colore di sfondo bianco con trasparenza */
             border-radius: 5px; /* Bordo arrotondato */
-            border: 1px solid #ccc; /* Aggiunta di un bordo sottile */
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc; /* Bordo sottile */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Ombra */
         }
         /* Stili per i campi del modulo */
         form input[type="text"],
         form input[type="email"],
         form input[type="submit"] {
-            width: 100%; /* Imposta la larghezza al 100% */
-            margin-top: 5px; /* Aggiungi spazio sopra */
+            width: calc(100% - 22px); /* Larghezza del campo meno il padding e il bordo */
+            margin: 5px 0; /* Margine */
+            padding: 10px; /* Spaziatura interna */
+            border: 1px solid #ccc; /* Bordo sottile */
+            border-radius: 5px; /* Bordo arrotondato */
+            box-sizing: border-box; /* Calcola il padding e il bordo nell'altezza e nella larghezza */
         }
         /* Stili per il bottone di invio nel modulo */
         form input[type="submit"] {
-            margin-top: 10px; /* Aggiungi spazio sopra il bottone */
+            width: 100%; /* Larghezza al 100% */
+            background-color: #007bff; /* Colore di sfondo */
+            color: #fff; /* Colore del testo */
+            border: none; /* Nessun bordo */
+            cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+        }
+        /* Stili per il bottone di invio al passaggio del mouse */
+        form input[type="submit"]:hover {
+            background-color: #0056b3; /* Cambia il colore di sfondo al passaggio del mouse */
         }
         /* Stili per il link di ritorno */
         .return-link {
@@ -84,4 +90,12 @@
             <label for="nome">Nome:</label><br>
             <input type="text" id="nome" name="nome" required><br>
             <label for="email">Email:</label><br>
-          
+            <input type="email" id="email" name="email" required><br><br>
+            <!-- Bottone di invio -->
+            <input type="submit" value="Conferma Rinnovo">
+        </form>
+        <!-- Link per tornare alla pagina precedente -->
+        <a href="#" class="return-link" onclick="history.go(-1);">Torna indietro</a>
+    </div>
+</body>
+</html>
