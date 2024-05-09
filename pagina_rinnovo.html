@@ -36,6 +36,30 @@
             font-size: 1.2rem; /* Dimensione del testo */
             text-align: justify; /* Giustifica il testo */
         }
+        /* Stili per il modulo di rinnovo */
+        form {
+            position: fixed; /* Imposta la posizione fissa */
+            bottom: 20px; /* Posiziona il modulo 20px sopra il fondo */
+            left: 50%; /* Posiziona al centro orizzontalmente */
+            transform: translateX(-50%); /* Centra orizzontalmente */
+            max-width: 80%; /* Riduci la larghezza del modulo */
+            padding: 10px; /* Riduci lo spazio intorno al modulo */
+            background-color: rgba(255, 255, 255, 0.8); /* Colore di sfondo bianco con trasparenza */
+            border-radius: 5px; /* Bordo arrotondato */
+            border: 1px solid #ccc; /* Aggiunta di un bordo sottile */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        /* Stili per i campi del modulo */
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="submit"] {
+            width: 100%; /* Imposta la larghezza al 100% */
+            margin-top: 5px; /* Aggiungi spazio sopra */
+        }
+        /* Stili per il bottone di invio nel modulo */
+        form input[type="submit"] {
+            margin-top: 10px; /* Aggiungi spazio sopra il bottone */
+        }
         /* Stili per il link di ritorno */
         .return-link {
             display: block; /* Rendi il link un blocco per occupare l'intera larghezza del contenitore */
@@ -45,27 +69,6 @@
             color: #007bff; /* Colore del testo del link */
             font-weight: bold; /* Rendi il testo del link in grassetto */
             font-size: 1.2rem; /* Dimensione del testo del link */
-        }
-        /* Stili per i campi di input */
-        input[type="text"],
-        input[type="email"],
-        input[type="submit"] {
-            width: 100%; /* Imposta la larghezza al 100% */
-            padding: 10px; /* Aggiunta di spazio intorno al testo */
-            margin-top: 10px; /* Aggiungi spazio sopra */
-            border: 1px solid #ccc; /* Aggiunta di un bordo sottile */
-            border-radius: 5px; /* Bordo arrotondato */
-            box-sizing: border-box; /* Calcola il padding e il bordo nell'altezza e nella larghezza */
-        }
-        /* Stili per il bottone di invio */
-        input[type="submit"] {
-            background-color: #007bff; /* Colore di sfondo del bottone */
-            color: #fff; /* Colore del testo del bottone */
-            cursor: pointer; /* Cambia il cursore al passaggio del mouse */
-        }
-        /* Stili per il bottone di invio al passaggio del mouse */
-        input[type="submit"]:hover {
-            background-color: #0056b3; /* Cambia il colore di sfondo al passaggio del mouse */
         }
     </style>
 </head>
@@ -81,12 +84,4 @@
             <label for="nome">Nome:</label><br>
             <input type="text" id="nome" name="nome" required><br>
             <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <!-- Bottone di invio -->
-            <input type="submit" value="Conferma Rinnovo">
-        </form>
-        <!-- Link per tornare alla pagina precedente -->
-        <a href="#" class="return-link" onclick="history.go(-1);">Torna indietro</a>
-    </div>
-</body>
-</html>
+          
