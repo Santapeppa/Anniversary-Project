@@ -70,6 +70,15 @@
         form input[type="submit"]:hover {
             background-color: #0056b3; /* Cambia il colore di sfondo al passaggio del mouse */
         }
+        /* Stili per il testo in basso */
+        .bottom-text {
+            position: absolute; /* Posizione assoluta per ancorare in basso */
+            bottom: 0; /* Distanza dal basso */
+            left: 50%; /* Allineamento al centro */
+            transform: translateX(-50%); /* Trasla verso sinistra del 50% della propria larghezza */
+            font-weight: bold; /* Grassetto */
+            font-size: 1.4vh; /* Riduci la dimensione del carattere a 1/10 della pagina */
+        }
     </style>
 </head>
 <body>
@@ -77,7 +86,6 @@
         <header>
             <h1>Dettagli del Rinnovo</h1>
         </header>
-        <p>Grazie per il tuo interesse nel rinnovare il tuo abbonamento! Per favore, compila il modulo di rinnovo sottostante con le tue informazioni e procedi con il pagamento per confermare il rinnovo del tuo abbonamento.</p>
     </div>
     <!-- Aggiungi qui il modulo di rinnovo -->
     <form action="processa_rinnovo.php" method="POST">
@@ -89,5 +97,7 @@
         <!-- Bottone di invio -->
         <input type="submit" value="Conferma Rinnovo">
     </form>
+    <!-- Testo in basso -->
+    <p class="bottom-text">Grazie per il tuo interesse nel rinnovare il tuo abbonamento! Per favore, compila il modulo di rinnovo sottostante con le tue informazioni e procedi con il pagamento per confermare il rinnovo del tuo abbonamento.</p>
 </body>
 </html>
