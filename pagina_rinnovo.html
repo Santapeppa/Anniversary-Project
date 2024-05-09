@@ -17,6 +17,9 @@
             background-position: center;
             background-attachment: fixed; /* Fissa l'immagine di sfondo per evitare lo scorrimento */
             font-size: 1.4vh; /* Riduci la dimensione del carattere a 1/10 della pagina */
+            position: relative; /* Posizione relativa per i figli assoluti */
+            min-height: 100vh; /* Altezza minima della finestra visualizzata */
+            margin: 0; /* Rimuove il margine predefinito */
         }
         /* Stili per il contenitore principale */
         .container {
@@ -27,27 +30,22 @@
             border-radius: 10px;
             border: 1px solid #ccc; /* Aggiunta di un bordo sottile */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: relative; /* Imposta la posizione relativa */
             font-size: 1.4vh; /* Riduci la dimensione del carattere a 1/10 della pagina */
-        }
-        /* Stili per il paragrafo */
-        .container p {
-            font-size: 1rem; /* Dimensione del testo */
-            text-align: justify; /* Giustifica il testo */
         }
         /* Stili per il modulo di rinnovo */
         form {
-            width: 100%; /* Larghezza al 100% */
-            padding: 10px; /* Spaziatura interna */
+            width: calc(100% - 42px); /* Larghezza del modulo meno il padding e il bordo */
+            margin: 20px auto 0; /* Margin in alto, auto ai lati, 0 in basso */
+            padding: 20px; /* Spaziatura interna */
             background-color: rgba(255, 255, 255, 0.8); /* Colore di sfondo bianco con trasparenza */
             border-radius: 5px; /* Bordo arrotondato */
             border: 1px solid #ccc; /* Bordo sottile */
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Ombra */
-            position: fixed; /* Posizione fissa */
-            bottom: 0; /* Fondo della pagina */
-            left: 0; /* Allineato a sinistra */
-            margin: 0; /* Rimuove il margine predefinito */
             font-size: 1.4vh; /* Riduci la dimensione del carattere a 1/10 della pagina */
+            position: absolute; /* Posizione assoluta per ancorare in fondo */
+            bottom: 20px; /* Distanza dal basso */
+            left: 50%; /* Allineamento al centro */
+            transform: translateX(-50%); /* Trasla verso sinistra del 50% della propria larghezza */
         }
         /* Stili per i campi del modulo */
         form input[type="text"],
@@ -72,16 +70,6 @@
         form input[type="submit"]:hover {
             background-color: #0056b3; /* Cambia il colore di sfondo al passaggio del mouse */
         }
-        /* Stili per il link di ritorno */
-        .return-link {
-            display: block; /* Rendi il link un blocco per occupare l'intera larghezza del contenitore */
-            text-align: center; /* Centra il link */
-            margin-top: 20px; /* Aggiungi spazio sopra il link */
-            text-decoration: none; /* Rimuovi la sottolineatura predefinita */
-            color: #007bff; /* Colore del testo del link */
-            font-weight: bold; /* Rendi il testo del link in grassetto */
-            font-size: 1.4vh; /* Dimensione del testo a 1/10 della pagina */
-        }
     </style>
 </head>
 <body>
@@ -101,7 +89,5 @@
         <!-- Bottone di invio -->
         <input type="submit" value="Conferma Rinnovo">
     </form>
-    <!-- Link per tornare alla pagina precedente -->
-    <a href="#" class="return-link" onclick="history.go(-1);">Torna indietro</a>
 </body>
 </html>
