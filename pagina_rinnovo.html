@@ -12,6 +12,9 @@
             color: #000; /* Colore del testo nero */
             line-height: 1.6;
             padding: 20px; /* Aggiunta di spazio intorno al contenuto */
+            background-image: url('DSCF4633.JPG'); /* Imposta l'immagine come sfondo */
+            background-size: cover;
+            background-position: center;
         }
         /* Stili per l'intestazione */
         header {
@@ -23,7 +26,7 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background-color: #fff; /* Colore di sfondo bianco */
+            background-color: rgba(255, 255, 255, 0.8); /* Colore di sfondo bianco con trasparenza */
             padding: 20px;
             border-radius: 10px;
             border: 1px solid #ccc; /* Aggiunta di un bordo sottile */
@@ -43,6 +46,27 @@
             color: #007bff; /* Colore del testo del link */
             font-weight: bold; /* Rendi il testo del link in grassetto */
             font-size: 1.2rem; /* Dimensione del testo del link */
+        }
+        /* Stili per i campi di input */
+        input[type="text"],
+        input[type="email"],
+        input[type="submit"] {
+            width: 100%; /* Imposta la larghezza al 100% */
+            padding: 10px; /* Aggiunta di spazio intorno al testo */
+            margin-top: 10px; /* Aggiungi spazio sopra */
+            border: 1px solid #ccc; /* Aggiunta di un bordo sottile */
+            border-radius: 5px; /* Bordo arrotondato */
+            box-sizing: border-box; /* Calcola il padding e il bordo nell'altezza e nella larghezza */
+        }
+        /* Stili per il bottone di invio */
+        input[type="submit"] {
+            background-color: #007bff; /* Colore di sfondo del bottone */
+            color: #fff; /* Colore del testo del bottone */
+            cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+        }
+        /* Stili per il bottone di invio al passaggio del mouse */
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Cambia il colore di sfondo al passaggio del mouse */
         }
     </style>
 </head>
