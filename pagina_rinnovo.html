@@ -24,13 +24,17 @@
         }
         /* Stili per il contenitore principale */
         .container {
-            max-width: 800px;
+            max-width: 70%; /* Riduci la larghezza del contenitore al 70% */
             margin: 0 auto;
             background-color: rgba(255, 255, 255, 0.8); /* Colore di sfondo bianco con trasparenza */
             padding: 20px;
             border-radius: 10px;
             border: 1px solid #ccc; /* Aggiunta di un bordo sottile */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: absolute; /* Imposta la posizione assoluta per posizionarlo in basso */
+            bottom: 20px; /* Distanza dal basso */
+            left: 50%; /* Posiziona al centro */
+            transform: translateX(-50%); /* Centra orizzontalmente */
         }
         /* Stili per il paragrafo */
         .container p {
