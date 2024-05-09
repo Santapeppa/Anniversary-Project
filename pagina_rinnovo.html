@@ -15,24 +15,19 @@
             background-image: url('DSCF4633.JPG'); /* Imposta l'immagine come sfondo */
             background-size: cover;
             background-position: center;
-        }
-        /* Stili per l'intestazione */
-        header {
-            background-color: #f4f4f4; /* Colore di sfondo grigio chiaro */
-            padding: 10px; /* Aggiunta di spazio intorno all'intestazione */
-            text-align: center; /* Centra il testo */
+            background-attachment: fixed; /* Fissa l'immagine di sfondo per evitare lo scorrimento */
         }
         /* Stili per il contenitore principale */
         .container {
-            max-width: 70%; /* Riduci la larghezza del contenitore al 70% */
+            max-width: 50%; /* Riduci la larghezza del contenitore al 50% */
             margin: 0 auto;
             background-color: rgba(255, 255, 255, 0.8); /* Colore di sfondo bianco con trasparenza */
             padding: 20px;
             border-radius: 10px;
             border: 1px solid #ccc; /* Aggiunta di un bordo sottile */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: absolute; /* Imposta la posizione assoluta per posizionarlo in basso */
-            bottom: 20px; /* Distanza dal basso */
+            position: fixed; /* Imposta la posizione fissa */
+            bottom: 0; /* Posiziona il contenitore in basso */
             left: 50%; /* Posiziona al centro */
             transform: translateX(-50%); /* Centra orizzontalmente */
         }
@@ -75,10 +70,10 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Dettagli del Rinnovo</h1>
-    </header>
     <div class="container">
+        <header>
+            <h1>Dettagli del Rinnovo</h1>
+        </header>
         <p>Grazie per il tuo interesse nel rinnovare il tuo abbonamento! Per favore, compila il modulo di rinnovo sottostante con le tue informazioni e procedi con il pagamento per confermare il rinnovo del tuo abbonamento.</p>
         <!-- Aggiungi qui il modulo di rinnovo -->
         <form action="processa_rinnovo.php" method="POST">
