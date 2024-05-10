@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="it">
-    <title>Rinnova Abbonamento</title>
+    <title>Dettagli del Rinnovo</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-image: url('DSCF4633.JPG'); /* Immagine di sfondo */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            font-size: 10px; /* Dimensione del carattere ridotta */
+            color: #333;
         }
         .container {
-            max-width: 600px;
-            margin: 20px auto;
+            max-width: 500px;
+            margin: 100px auto; /* Margine superiore e inferiore per centrare */
+            background-color: rgba(255, 255, 255, 0.8); /* Sfondo del contenitore con trasparenza */
             padding: 20px;
-            background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            font-size: 10px; /* Dimensione del carattere ridotta */
         }
         h1 {
             text-align: center;
+            font-size: 16px; /* Dimensione del carattere ridotta */
             color: #007bff;
         }
         form {
@@ -32,16 +37,18 @@
             display: block;
             margin-bottom: 6px;
             font-weight: bold;
+            font-size: 12px; /* Dimensione del carattere ridotta */
         }
         input[type="text"],
         input[type="email"],
         input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
+            width: calc(100% - 22px);
+            padding: 8px;
+            margin-bottom: 12px;
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
+            font-size: 10px; /* Dimensione del carattere ridotta */
         }
         input[type="submit"] {
             background-color: #007bff;
@@ -53,7 +60,7 @@
         }
         .bottom-text {
             text-align: center;
-            font-size: 14px;
+            font-size: 10px; /* Dimensione del carattere ridotta */
             color: #666;
             margin-top: 20px;
         }
@@ -61,7 +68,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Rinnova Abbonamento</h1>
+        <h1>Dettagli del Rinnovo</h1>
         <form action="processa_rinnovo.php" method="POST">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
