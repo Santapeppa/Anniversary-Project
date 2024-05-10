@@ -4,100 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="it">
-    <title>Dettagli del Rinnovo</title>
+    <title>Rinnova Abbonamento</title>
     <style>
-        /* Stili per il corpo della pagina */
         body {
-            font-family: 'Courier New', monospace;
-            color: #000; /* Colore del testo nero */
-            line-height: 1.6;
-            padding: 20px; /* Aggiunta di spazio intorno al contenuto */
-            background-image: url('DSCF4633.JPG'); /* Imposta l'immagine come sfondo */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed; /* Fissa l'immagine di sfondo per evitare lo scorrimento */
-            font-size: 1.4vh; /* Riduci la dimensione del carattere a 1/10 della pagina */
-            position: relative; /* Posizione relativa per i figli assoluti */
-            min-height: 100vh; /* Altezza minima della finestra visualizzata */
-            margin: 0; /* Rimuove il margine predefinito */
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        /* Stili per il contenitore principale */
         .container {
-            max-width: 50%; /* Riduci la larghezza del contenitore al 50% */
-            margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8); /* Colore di sfondo bianco con trasparenza */
+            max-width: 600px;
+            margin: 20px auto;
             padding: 20px;
-            border-radius: 10px;
-            border: 1px solid #ccc; /* Aggiunta di un bordo sottile */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            font-size: 1.4vh; /* Riduci la dimensione del carattere a 1/10 della pagina */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        /* Stili per il modulo di rinnovo */
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
         form {
-            width: calc(100% - 42px); /* Larghezza del modulo meno il padding e il bordo */
-            margin: 20px auto 0; /* Margin in alto, auto ai lati, 0 in basso */
-            padding: 20px; /* Spaziatura interna */
-            background-color: rgba(255, 255, 255, 0.8); /* Colore di sfondo bianco con trasparenza */
-            border-radius: 5px; /* Bordo arrotondato */
-            border: 1px solid #ccc; /* Bordo sottile */
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Ombra */
-            font-size: 1.4vh; /* Riduci la dimensione del carattere a 1/10 della pagina */
-            position: absolute; /* Posizione assoluta per ancorare in fondo */
-            bottom: 20px; /* Distanza dal basso */
-            left: 50%; /* Allineamento al centro */
-            transform: translateX(-50%); /* Trasla verso sinistra del 50% della propria larghezza */
+            margin-top: 20px;
         }
-        /* Stili per i campi del modulo */
-        form input[type="text"],
-        form input[type="email"],
-        form input[type="submit"] {
-            width: calc(100% - 22px); /* Larghezza del campo meno il padding e il bordo */
-            margin: 5px 0; /* Margine */
-            padding: 10px; /* Spaziatura interna */
-            border: 1px solid #ccc; /* Bordo sottile */
-            border-radius: 5px; /* Bordo arrotondato */
-            box-sizing: border-box; /* Calcola il padding e il bordo nell'altezza e nella larghezza */
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
         }
-        /* Stili per il bottone di invio nel modulo */
-        form input[type="submit"] {
-            width: 100%; /* Larghezza al 100% */
-            background-color: #007bff; /* Colore di sfondo */
-            color: #fff; /* Colore del testo */
-            border: none; /* Nessun bordo */
-            cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+        input[type="text"],
+        input[type="email"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
         }
-        /* Stili per il bottone di invio al passaggio del mouse */
-        form input[type="submit"]:hover {
-            background-color: #0056b3; /* Cambia il colore di sfondo al passaggio del mouse */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
         }
-        /* Stili per il testo in basso */
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
         .bottom-text {
-            position: absolute; /* Posizione assoluta per ancorare in basso */
-            bottom: 0; /* Distanza dal basso */
-            left: 50%; /* Allineamento al centro */
-            transform: translateX(-50%); /* Trasla verso sinistra del 50% della propria larghezza */
-            font-weight: bold; /* Grassetto */
-            font-size: 1.4vh; /* Riduci la dimensione del carattere a 1/10 della pagina */
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Dettagli del Rinnovo</h1>
-        </header>
+        <h1>Rinnova Abbonamento</h1>
+        <form action="processa_rinnovo.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Conferma Rinnovo">
+        </form>
+        <p class="bottom-text">Grazie per il tuo interesse nel rinnovare il tuo abbonamento! Per favore, compila il modulo di rinnovo sottostante con le tue informazioni e procedi con il pagamento per confermare il rinnovo del tuo abbonamento.</p>
     </div>
-    <!-- Aggiungi qui il modulo di rinnovo -->
-    <form action="processa_rinnovo.php" method="POST">
-        <!-- Campi del modulo -->
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        <!-- Bottone di invio -->
-        <input type="submit" value="Conferma Rinnovo">
-    </form>
-    <!-- Testo in basso -->
-    <p class="bottom-text">Grazie per il tuo interesse nel rinnovare il tuo abbonamento! Per favore, compila il modulo di rinnovo sottostante con le tue informazioni e procedi con il pagamento per confermare il rinnovo del tuo abbonamento.</p>
 </body>
 </html>
