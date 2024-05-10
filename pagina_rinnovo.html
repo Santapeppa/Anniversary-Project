@@ -19,7 +19,7 @@
             display: flex;
             flex-direction: column;
             align-items: center; /* Centra il contenuto verticalmente */
-            justify-content: center; /* Centra il contenuto orizzontalmente */
+            justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
         }
         .container {
             max-width: 300px; /* Riduci la larghezza del contenitore */
@@ -69,11 +69,11 @@
 <body>
     <div class="container">
         <h1>Dettagli del Rinnovo</h1>
-        <form action="processa_rinnovo.php" method="POST">
-            <input type="text" id="nome" name="nome" placeholder="Metti qui il tuo nome" required>
-            <input type="submit" value="Clicca qui per confermare">
-        </form>
         <p class="bottom-text">Grazie per il tuo interesse nel rinnovare il tuo abbonamento! Per favore, inserisci il tuo nome e clicca sul pulsante per confermare il rinnovo.</p>
     </div>
+    <form action="processa_rinnovo.php" method="POST">
+        <input type="text" id="nome" name="nome" placeholder="Metti qui il tuo nome" required>
+        <input type="submit" value="Clicca qui per confermare">
+    </form>
 </body>
 </html>
