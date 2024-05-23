@@ -1,4 +1,4 @@
-<!--<!DOCTYPE html>-->
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -49,7 +49,7 @@
             display: none; /* Removed the footer */
         }
         /* Stili per il link */
-        .renewal-link {
+        .renewal-link, .surprise-link {
             display: block; /* Rendi il link un blocco per occupare l'intera larghezza del contenitore */
             text-align: center; /* Centra il link */
             margin-top: 20px; /* Aggiungi spazio sopra il link */
@@ -66,6 +66,7 @@
         <p style="font-size: 1.5rem;">Dopo questi 4 meravigliosi anni, sei pronto a rinnovare il tuo contratto per altri +4?</p>
         <!-- Aggiungi il link alla nuova pagina qui -->
         <a href="pagina_rinnovo.html" class="renewal-link">CLICCA QUI PER ULTERIORI INFORMAZIONI</a>
+        <a href="pagina_sorpresa.html" class="surprise-link">Mamma mia, ma sono davvero 4 anni??</a>
     </div>
 </body>
 </html>
