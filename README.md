@@ -65,9 +65,9 @@
             position: absolute; /* Posizionamento assoluto */
             top: 20px; /* Distanza dall'alto */
             left: 20px; /* Distanza da sinistra */
-            width: 100px; /* Larghezza del cerchio */
-            height: 100px; /* Altezza del cerchio */
-            background-color: rgba(173, 216, 230, 0.7); /* Colore di sfondo azzurro semi-trasparente */
+            width: 120px; /* Larghezza del cerchio */
+            height: 120px; /* Altezza del cerchio */
+            background-color: rgba(0, 123, 255, 0.7); /* Colore di sfondo azzurro semi-trasparente */
             color: #000; /* Colore del testo */
             border-radius: 50%; /* Rende il link circolare */
             display: flex; /* Usa flexbox per centrare il testo */
@@ -75,8 +75,10 @@
             justify-content: center; /* Centra il testo orizzontalmente */
             text-align: center; /* Centra il testo */
             text-decoration: none; /* Rimuovi la sottolineatura */
+            font-family: Verdana, sans-serif; /* Font Verdana */
             font-weight: bold; /* Rendi il testo in grassetto */
-            font-size: 1rem; /* Dimensione del testo */
+            font-size: 0.8rem; /* Dimensione del testo */
+            text-transform: uppercase; /* Testo maiuscolo */
             padding: 10px; /* Padding interno per il testo */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombra del box */
             z-index: 1000; /* Assicura che il link sia in cima */
@@ -94,4 +96,3 @@
     <a href="pagina_sorpresa.html" class="surprise-link">Mamma mia, ma sono davvero 4 anni??</a>
 </body>
 </html>
-
