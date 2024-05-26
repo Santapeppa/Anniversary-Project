@@ -67,7 +67,7 @@
             left: 20px; /* Distanza da sinistra */
             width: 100px; /* Larghezza del cerchio */
             height: 100px; /* Altezza del cerchio */
-            background-color: rgba(255, 255, 255, 0.7); /* Colore di sfondo semi-trasparente */
+            background-color: rgba(173, 216, 230, 0.7); /* Colore di sfondo azzurro semi-trasparente */
             color: #000; /* Colore del testo */
             border-radius: 50%; /* Rende il link circolare */
             display: flex; /* Usa flexbox per centrare il testo */
@@ -94,3 +94,4 @@
     <a href="pagina_sorpresa.html" class="surprise-link">Mamma mia, ma sono davvero 4 anni??</a>
 </body>
 </html>
+
