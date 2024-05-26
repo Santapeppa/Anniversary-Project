@@ -9,12 +9,16 @@
         /* Imposta l'immagine come sfondo */
         body {
             background-image: url('DSCF4372.JPG'); /* Usa la nuova immagine di sfondo */
-            background-size: cover;
-            background-position: center;
+            background-size: contain; /* Adatta l'immagine interamente all'interno della finestra */
+            background-repeat: no-repeat; /* Non ripete l'immagine */
+            background-position: center; /* Centra l'immagine */
             font-family: 'Courier New', monospace;
             color: #fff; /* Colore del testo bianco */
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Ombra del testo per maggiore visibilità */
             line-height: 1.6;
+            min-height: 100vh; /* Assicura che il body occupi almeno il 100% dell'altezza della finestra */
+            margin: 0; /* Rimuove i margini di default */
+            padding: 0; /* Rimuove i padding di default */
         }
         /* Stili per il contenitore principale */
         .container {
@@ -51,8 +55,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Congratulazioni per i tuoi 4 anni con noi (Io, te e le mie 25 personalità!)</h1>
-        <p>Anche se non siamo d'accordo sulla data da festeggiare, dobbiamo proprio dirci che siamo più stagionati di un parmigiano reggiano!</p>
+        <h1>Congratulazioni per i tuoi 4 anni con noi!</h1>
+        <p>È incredibile come il tempo voli! Grazie per essere un nostro cliente fedele per tutti questi anni. Siamo entusiasti di continuare questa avventura insieme.</p>
         <!-- Link per tornare alla pagina principale -->
         <a href="index.html" class="back-link">Torna alla pagina principale</a>
     </div>
