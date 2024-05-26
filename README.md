@@ -15,6 +15,8 @@
             color: #fff; /* Changed text color to white for better contrast */
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Added text shadow for better visibility */
             line-height: 1.6;
+            margin: 0; /* Rimuove i margini di default */
+            padding: 0; /* Rimuove i padding di default */
         }
         /* Stili per l'intestazione */
         header {
@@ -48,8 +50,8 @@
         footer {
             display: none; /* Removed the footer */
         }
-        /* Stili per il link */
-        .renewal-link, .surprise-link {
+        /* Stili per il link di rinnovo */
+        .renewal-link {
             display: block; /* Rendi il link un blocco per occupare l'intera larghezza del contenitore */
             text-align: center; /* Centra il link */
             margin-top: 20px; /* Aggiungi spazio sopra il link */
@@ -58,15 +60,37 @@
             font-weight: bold; /* Rendi il testo del link in grassetto */
             font-size: 1.2rem; /* Dimensione del testo del link */
         }
+        /* Stili per il link divertente */
+        .surprise-link {
+            position: absolute; /* Posizionamento assoluto */
+            top: 20px; /* Distanza dall'alto */
+            left: 20px; /* Distanza da sinistra */
+            width: 100px; /* Larghezza del cerchio */
+            height: 100px; /* Altezza del cerchio */
+            background-color: rgba(255, 255, 255, 0.7); /* Colore di sfondo semi-trasparente */
+            color: #000; /* Colore del testo */
+            border-radius: 50%; /* Rende il link circolare */
+            display: flex; /* Usa flexbox per centrare il testo */
+            align-items: center; /* Centra il testo verticalmente */
+            justify-content: center; /* Centra il testo orizzontalmente */
+            text-align: center; /* Centra il testo */
+            text-decoration: none; /* Rimuovi la sottolineatura */
+            font-weight: bold; /* Rendi il testo in grassetto */
+            font-size: 1rem; /* Dimensione del testo */
+            padding: 10px; /* Padding interno per il testo */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombra del box */
+            z-index: 1000; /* Assicura che il link sia in cima */
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h2>Sei ormai un affezionato cliente</h2>
         <p style="font-size: 1.5rem;">Dopo questi 4 meravigliosi anni, sei pronto a rinnovare il tuo contratto per altri +4?</p>
-        <!-- Aggiungi il link alla nuova pagina qui -->
+        <!-- Link alla nuova pagina -->
         <a href="pagina_rinnovo.html" class="renewal-link">CLICCA QUI PER ULTERIORI INFORMAZIONI</a>
-        <a href="pagina_sorpresa.html" class="surprise-link">Mamma mia, ma sono davvero 4 anni??</a>
     </div>
+    <!-- Link sorpresa -->
+    <a href="pagina_sorpresa.html" class="surprise-link">Mamma mia, ma sono davvero 4 anni??</a>
 </body>
 </html>
