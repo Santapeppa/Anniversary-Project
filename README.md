@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html> -->
+<!-- <!DOCTYPE html> --!>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -83,12 +83,22 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombra del box */
             z-index: 1000; /* Assicura che il link sia in cima */
         }
+        /* Stili per "ANNIVERSARY PROJECT" */
+        .anniversary-project {
+            font-family: 'Segoe Script', cursive;
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 20px;
+            color: #fff; /* Colore del testo */
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h2>Sei ormai un affezionato cliente</h2>
         <p style="font-size: 1.5rem;">Dopo questi 4 meravigliosi anni, sei pronto a rinnovare il tuo contratto per altri +4?</p>
+        <!-- Testo "ANNIVERSARY PROJECT" -->
+        <div class="anniversary-project">ANNIVERSARY PROJECT</div>
         <!-- Link alla nuova pagina -->
         <a href="pagina_rinnovo.html" class="renewal-link">CLICCA QUI PER ULTERIORI INFORMAZIONI</a>
     </div>
