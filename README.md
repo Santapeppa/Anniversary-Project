@@ -83,6 +83,20 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombra del box */
             z-index: 1000; /* Assicura che il link sia in cima */
         }
+        /* Stili per il banner infografica */
+        .infographic-banner {
+            position: fixed; /* Posiziona il banner in modo fisso in fondo alla pagina */
+            bottom: 0; /* Allinea il banner al fondo della pagina */
+            left: 0; /* Allinea il banner a sinistra della pagina */
+            width: 100%; /* Imposta la larghezza del banner al 100% */
+            background-color: rgba(0, 0, 0, 0.7); /* Sfondo nero semi-trasparente */
+            color: #fff; /* Colore del testo bianco */
+            text-align: center; /* Centra il testo */
+            padding: 15px 0; /* Padding sopra e sotto */
+            font-size: 1.2rem; /* Dimensione del testo */
+            font-weight: bold; /* Testo in grassetto */
+            text-decoration: none; /* Rimuovi la sottolineatura */
+        }
     </style>
 </head>
 <body>
@@ -94,5 +108,7 @@
     </div>
     <!-- Link sorpresa -->
     <a href="pagina_sorpresa.html" class="surprise-link">Mamma mia, ma sono davvero 4 anni??</a>
+    <!-- Banner infografica -->
+    <a href="pagina_infografica.html" class="infographic-banner">INFOGRAFICHE</a>
 </body>
 </html>
