@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
@@ -109,6 +109,6 @@
     <!-- Link sorpresa -->
     <a href="pagina_sorpresa.html" class="surprise-link">Mamma mia, ma sono davvero 4 anni??</a>
     <!-- Banner infografica -->
-    <a href="pagina_infografica.html" class="infographic-banner">INFOGRAFICHE</a>
+    <a href="infografiche.html" class="infographic-banner">INFOGRAFICHE</a>
 </body>
 </html>
