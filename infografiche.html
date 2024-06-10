@@ -4,71 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="it">
-    <title>La tua Pagina Web con Sfondo Indie</title>
+    <title>Infografiche</title>
     <style>
-        /* Imposta l'immagine come sfondo */
         body {
-            background-image: url('IMM036.JPG'); /* Changed background image */
-            background-size: cover;
-            background-position: center;
-            font-family: 'Courier New', monospace;
-            color: #fff; /* Changed text color to white for better contrast */
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Added text shadow for better visibility */
-            line-height: 1.6;
-            margin: 0; /* Rimuove i margini di default */
-            padding: 0; /* Rimuove i padding di default */
+            background-color: #f0f0f0; /* Colore di sfondo chiaro */
+            font-family: 'Arial', sans-serif;
+            color: #333; /* Colore del testo scuro per un buon contrasto */
+            margin: 0;
+            padding: 0;
         }
-        /* Stili per l'intestazione */
-        header {
-            display: none; /* Removed the header with blue background */
-        }
-        /* Stili per il contenitore principale */
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: transparent; /* Removed the blue background */
+            background-color: #fff; /* Sfondo bianco per il contenitore */
             border-radius: 10px;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Leggera ombra */
         }
-        /* Stili per l'elemento video */
-        .container video {
-            display: none; /* Nascondi il video per impostazione predefinita */
+        h1, h2 {
+            text-align: center;
+            color: #007bff; /* Colore azzurro per i titoli */
         }
-        /* Stili per l'immagine GIF */
-        .container img {
-            width: 100%; /* Imposta la larghezza dell'immagine GIF al 100% del contenitore */
-            height: auto; /* Imposta l'altezza automatica per mantenere le proporzioni */
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
         }
-        /* Stili per il paragrafo */
-        .container p {
-            font-size: 1.2rem; /* Aumenta la dimensione del testo */
-            font-weight: bold; /* Rendi il testo in grassetto */
-            text-align: center; /* Centra il testo */
+        .infographic {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
         }
-        footer {
-            display: none; /* Removed the footer */
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff; /* Colore azzurro per il link */
+            font-weight: bold;
+            font-size: 1.2rem;
         }
-        /* Stili per il link di rinnovo */
-        .renewal-link {
-            display: block; /* Rendi il link un blocco per occupare l'intera larghezza del contenitore */
-            text-align: center; /* Centra il link */
-            margin-top: 20px; /* Aggiungi spazio sopra il link */
-            text-decoration: none; /* Rimuovi la sottolineatura predefinita */
-            color: #fff; /* Colore del testo del link */
-            font-weight: bold; /* Rendi il testo del link in grassetto */
-            font-size: 1.2rem; /* Dimensione del testo del link */
+        .back-link:hover {
+            text-decoration: underline;
         }
-        /* Stili per il link divertente */
-        .surprise-link {
-            position: absolute; /* Posizionamento assoluto */
-            top: 20px; /* Distanza dall'alto */
-            left: 20px; /* Distanza da sinistra */
-            width: 120px; /* Larghezza del cerchio */
-            height: 120px; /* Altezza del cerchio */
-            background-color: rgba(0, 123, 255, 0.7); /* Colore di sfondo azzurro semi-trasparente */
-            color: #000; /* Colore del testo */
-            border-radius: 50%; /* Rende il link circolare */
-            display: flex; /* Usa flexbox per centrare il testo */
-            align-items: center; /* Centra il testo verticalmente */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Infografiche</h1>
+        <p>Benvenuto nella sezione delle infografiche! Qui troverai una raccolta di informazioni visive che ti aiuteranno a comprendere meglio i dati e le statistiche rilevanti.</p>
+        
+        <!--
