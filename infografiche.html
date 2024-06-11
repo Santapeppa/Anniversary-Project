@@ -8,12 +8,15 @@
     <style>
         body {
             background-image: url('DSCF4663.JPG'); /* Immagine di sfondo per l'intera pagina */
-            background-size: cover; /* Copre l'intera area */
-            background-position: center; /* Centro dell'immagine */
+            background-size: contain; /* Contiene l'intera immagine */
+            background-repeat: no-repeat; /* Non ripete l'immagine */
+            background-attachment: fixed; /* Mantiene l'immagine fissa al suo posto */
+            background-position: center; /* Centra l'immagine */
             font-family: 'Arial', sans-serif;
             color: #333; /* Colore del testo scuro per un buon contrasto */
             margin: 0;
             padding: 0;
+            min-height: 100vh; /* Assicura che il body sia almeno alto quanto la viewport */
         }
         .container {
             max-width: 800px;
