@@ -12,7 +12,7 @@
             background-image: url('DSCF4633.JPG'); /* Immagine di sfondo */
             background-size: cover;
             background-position: center;
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica', Arial, sans-serif;
             font-size: 10px; /* Dimensione del carattere ridotta */
             color: #333;
             min-height: 100vh; /* Altezza minima della finestra visualizzata */
@@ -27,24 +27,25 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-            font-size: 10px; /* Dimensione del carattere ridotta */
             text-align: center;
         }
         h1 {
             font-size: 16px; /* Dimensione del carattere ridotta */
             color: #007bff;
+            font-weight: bold;
         }
         .bottom-text {
-            font-size: 10px; /* Dimensione del carattere ridotta */
-            color: #666;
+            font-size: 12px; /* Dimensione del carattere aumentata */
+            color: #333; /* Colore del testo più scuro per maggiore contrasto */
             margin-top: 20px;
+            font-weight: bold; /* Testo in grassetto */
         }
         .renew-link {
             cursor: pointer;
             color: #007bff;
             text-decoration: underline;
             font-weight: bold;
-            font-size: 12px; /* Aumento della dimensione del carattere */
+            font-size: 14px; /* Aumento della dimensione del carattere */
             padding: 5px 10px; /* Aggiunta di spaziatura interna */
             border: 1px solid #007bff; /* Aggiunta di una cornice */
             border-radius: 5px; /* Arrotondamento dei bordi */
@@ -60,7 +61,7 @@
 <body>
     <div class="container">
         <h1>Dettagli del Rinnovo</h1>
-        <p class="bottom-text">Grazie per il tuo interesse nel rinnovare il tuo abbonamento! COME HA DETTO UNA GRANDE MENTE, NE ABBIAMO FATTI 4, ORA ANDIAMO PER ALTRI 4! Se sei sicuro sicuro, clicca qui per rinnovare.</p>
+        <p class="bottom-text">Grazie per il tuo interesse nel rinnovare il tuo abbonamento! <br>COME HA DETTO UNA GRANDE MENTE, NE ABBIAMO FATTI 4, ORA ANDIAMO PER ALTRI 4!<br> Se sei sicuro sicuro, clicca qui per rinnovare.</p>
     </div>
     <div class="renew-link" onclick="window.location.href='congratulazioni.html'">Clicca qui per confermare</div>
 </body>
