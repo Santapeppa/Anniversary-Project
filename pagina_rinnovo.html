@@ -69,8 +69,14 @@
             font-weight: bold;
             text-align: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            cursor: pointer;
         }
     </style>
+    <script>
+        function showAlert() {
+            alert("SI CURI LEI");
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -78,6 +84,6 @@
         <p class="bottom-text">Grazie per il tuo interesse nel rinnovare il tuo abbonamento! <br>COME HA DETTO UNA GRANDE MENTE, NE ABBIAMO FATTI 4, ORA ANDIAMO PER ALTRI 4!<br> Se sei sicuro sicuro, clicca qui per rinnovare.</p>
     </div>
     <div class="renew-link" onclick="window.location.href='congratulazioni.html'">Clicca qui per confermare</div>
-    <div class="badge">MA SEI SICURO??</div>
+    <div class="badge" onclick="showAlert()">MA SEI SICURO??</div>
 </body>
 </html>
