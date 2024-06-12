@@ -20,6 +20,7 @@
             flex-direction: column;
             align-items: center; /* Centra il contenuto verticalmente */
             justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
+            position: relative;
         }
         .container {
             max-width: 300px; /* Riduci la larghezza del contenitore */
@@ -56,6 +57,19 @@
             background-color: #007bff; /* Cambio colore sfondo al passaggio del mouse */
             color: #fff; /* Cambio colore testo al passaggio del mouse */
         }
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #98FB98; /* Colore verdino */
+            color: #333;
+            border-radius: 50%;
+            padding: 10px;
+            font-size: 12px; /* Dimensione del carattere */
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
     </style>
 </head>
 <body>
@@ -64,5 +78,6 @@
         <p class="bottom-text">Grazie per il tuo interesse nel rinnovare il tuo abbonamento! <br>COME HA DETTO UNA GRANDE MENTE, NE ABBIAMO FATTI 4, ORA ANDIAMO PER ALTRI 4!<br> Se sei sicuro sicuro, clicca qui per rinnovare.</p>
     </div>
     <div class="renew-link" onclick="window.location.href='congratulazioni.html'">Clicca qui per confermare</div>
+    <div class="badge">MA SEI SICURO??</div>
 </body>
 </html>
